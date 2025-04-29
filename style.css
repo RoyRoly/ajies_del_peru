@@ -1,0 +1,209 @@
+/* -------------------- RESET -------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff9f4;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  body.dark {
+    background: #1f1f1f;
+    color: #eee;
+  }
+  
+  /* -------------------- HEADER -------------------- */
+  header {
+    background: linear-gradient(90deg, #ff4e00, #ec9f05);
+    color: white;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  header .top-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    header .top-bar {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .controls {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
+  .controls input,
+  .controls select,
+  .controls button {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .controls input {
+    width: 180px;
+  }
+  
+  .controls button {
+    cursor: pointer;
+    background-color: #fff;
+    color: #333;
+    transition: background 0.2s;
+  }
+  
+  .controls button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* -------------------- MAIN -------------------- */
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  
+  .chili-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out, background 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+  }
+  
+  body.dark .chili-card {
+    background: #2a2a2a;
+  }
+  
+  .chili-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .chili-info {
+    padding: 1rem;
+  }
+  
+  .chili-info h3 {
+    margin-bottom: 0.5rem;
+    color: #e63946;
+  }
+  
+  .chili-info p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  .chili-info button {
+    margin-top: 0.5rem;
+    background-color: #ff4e00;
+    color: white;
+    border: none;
+    padding: 0.5rem 0.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .chili-info button:hover {
+    background-color: #e63900;
+  }
+  
+  /* -------------------- MODAL -------------------- */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+  }
+  
+  .modal.hidden {
+    display: none;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    overflow-y: auto;
+    max-height: 90vh;
+    color: #333;
+  }
+  
+  body.dark .modal-content {
+    background: #2a2a2a;
+    color: #eee;
+  }
+  
+  .modal-content img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .modal-info p {
+    margin: 0.3rem 0;
+  }
+  
+  .close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* -------------------- FOOTER -------------------- */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #eee;
+    color: #333;
+  }
+  
+  body.dark footer {
+    background: #111;
+    color: #aaa;
+  }
+  
+  /* -------------------- ANIMACIONES -------------------- */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

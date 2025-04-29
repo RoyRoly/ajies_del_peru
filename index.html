@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajíes del Perú</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <h1 id="title">🌶 Ajíes del Perú</h1>
+      <div class="controls">
+        <input type="text" id="searchInput" placeholder="Buscar ají..." />
+        <select id="regionFilter">
+          <option value="all">Todas las regiones</option>
+        </select>
+        <button id="langToggle">EN</button>
+        <button id="darkModeToggle">🌙</button>
+      </div>
+    </div>
+    <p id="subtitle">Descubre la diversidad picante de nuestro país</p>
+  </header>
+
+  <main id="chili-container">
+    <!-- Cards de ajíes se inyectan aquí -->
+  </main>
+
+  <!-- Modal para más info -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <img id="modalImage" src="" alt="Ají" />
+      <div class="modal-info">
+        <h2 id="modalName"></h2>
+        <p><strong id="sciNameLabel">Nombre científico:</strong> <span id="modalSciName"></span></p>
+        <p><strong id="regionLabel">Región:</strong> <span id="modalRegion"></span></p>
+        <p><strong id="scovilleLabel">Nivel de picor:</strong> <span id="modalScoville"></span></p>
+        <p><strong id="useLabel">Uso culinario:</strong> <span id="modalUse"></span></p>
+        <p><strong id="seasonLabel">Temporada:</strong> <span id="modalSeason"></span></p>
+        <p><strong id="descriptionLabel">Descripción:</strong></p>
+        <p id="modalDescription"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p id="footerText">Hecho con ❤️ en Perú</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

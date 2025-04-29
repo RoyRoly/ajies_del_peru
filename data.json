@@ -1,0 +1,47 @@
+[
+    {
+      "id": 1,
+      "nombre": "Ají Amarillo",
+      "nombreCientifico": "Capsicum baccatum",
+      "region": "Costa y Sierra",
+      "picor": "Moderado (30,000 - 50,000 SHU)",
+      "usoCulinario": "Base para salsas y guisos como ají de gallina y causa limeña",
+      "temporada": "Todo el año",
+      "descripcion": "Es uno de los más usados en la cocina peruana. Tiene un sabor afrutado, color amarillo intenso y picor medio. Es la estrella en muchos platos criollos.",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Aji_amarillo.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Ají Limo",
+      "nombreCientifico": "Capsicum chinense",
+      "region": "Costa Norte",
+      "picor": "Alto (100,000 - 150,000 SHU)",
+      "usoCulinario": "Ideal para ceviches, escabeches y salsas frescas",
+      "temporada": "Primavera y verano",
+      "descripcion": "Este ají es muy aromático, con colores que van desde el amarillo hasta el morado. Se utiliza mucho en ceviches y platos marinos.",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/7/74/Aji_limo.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Rocoto",
+      "nombreCientifico": "Capsicum pubescens",
+      "region": "Sierra Sur",
+      "picor": "Muy alto (100,000 - 250,000 SHU)",
+      "usoCulinario": "Relleno, en salsas, o molido para aderezos",
+      "temporada": "Invierno y otoño",
+      "descripcion": "Parece un pimiento, pero es extremadamente picante. El rocoto tiene semillas negras, un sabor fuerte y es protagonista en platos como el rocoto relleno arequipeño.",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/4/41/Capsicum_pubescens.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Ají Panca",
+      "nombreCientifico": "Capsicum chinense",
+      "region": "Costa Central",
+      "picor": "Bajo (500 - 1,000 SHU)",
+      "usoCulinario": "Ideal para adobos, anticuchos y guisos por su sabor ahumado",
+      "temporada": "Todo el año",
+      "descripcion": "De color rojo oscuro cuando se seca. Es uno de los ajíes menos picantes, pero con sabor profundo y ahumado. Muy usado en marinados y sopas.",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Aji_Panca.jpg"
+    }
+  ]
+  
